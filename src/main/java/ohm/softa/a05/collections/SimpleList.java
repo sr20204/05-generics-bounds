@@ -17,6 +17,8 @@ public interface SimpleList<T> extends Iterable<T> {
 	 */
 	void add(T o);
 
+	//void remove(T o);
+
 	/**
 	 * @param clazz Class instance to solve the instantiation problem
 	 */

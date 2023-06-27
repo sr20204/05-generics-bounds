@@ -3,13 +3,16 @@ package ohm.softa.a05.model;
 public class Flower<T> extends Plant<T> {
 
     private PlantColor color;
-    public Flower(PlantColor color){
+    public Flower(PlantColor color, double height, String name,String family){
         if(color == PlantColor.GREEN){
             throw new RuntimeException("Shrub cant be green");
         }
         else{
             this.color = color;
         }
+        setHeight(height);
+        setName(name);
+        setFamily(family);
     }
 
     @Override
@@ -29,7 +32,7 @@ public class Flower<T> extends Plant<T> {
 
     @Override
     public String toString() {
-        return "Name: " + getName() + " Height: " + getHeight() + " Family" + getFamily();
+        return "Name: " + getName() + " Height: " + getHeight() + " Family: " + getFamily() + "  ";
     }
 
     @Override

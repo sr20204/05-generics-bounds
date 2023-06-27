@@ -40,6 +40,23 @@ public class SimpleListImpl<T> implements SimpleList<T> {
 		}
 		size++;
 	}
+	/*@Override
+	public void remove(T item){
+		if(head != null)
+		{
+			ListElement<T> temp = head;
+			ListElement<T> lastReference = head;
+			while(temp != item)
+			{
+				lastReference = temp;
+				temp = temp.getNext();
+
+			}
+			lastReference.setNext(temp.getNext());
+			size--;
+		}
+	}
+*/
 
 	/**
 	 * @return size of the list

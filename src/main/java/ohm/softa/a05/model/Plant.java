@@ -10,14 +10,28 @@ public abstract class Plant<T> implements Comparable<T> {
     public double getHeight() {
         return height;
     }
+    public void setHeight(double height)
+    {
+        this.height = height;
+    }
 
     public String getFamily() {
         return family;
     }
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
 
     public String getName() {
         return name;
     }
+    public void setFamily(String family)
+    {
+        this.family = family;
+    }
+
     public abstract PlantColor getColor();
 
 }
